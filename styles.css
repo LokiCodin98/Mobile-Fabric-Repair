@@ -22,7 +22,7 @@ p {
 }
 
 .main-header {
-  background-color: var(--black);
+  background: linear-gradient(to bottom right, #0f1f1f, #1e1e1e);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 999;
+  
 }
 
 .logo {
@@ -95,6 +96,7 @@ img:hover {
   padding: 0.5rem 1rem;
   border-radius: 999px;
   font-weight: bold;
+  
 }
 
 .main-img {
@@ -142,7 +144,7 @@ img:hover {
   height: auto;
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(to bottom, var(--black), var(--black));
+  background: linear-gradient(to bottom right, #0f1f1f, #1e1e1e);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,14 +152,14 @@ img:hover {
 }
 
 .left-box {
-  background: linear-gradient(to bottom, var(--black), var(--black));
+  background: linear-gradient(to bottom right, #0f1f1f, #1e1e1e);
   width: 50%;
   border: solid lightseagreen;
   
 }
 
 .right-box {
- background: linear-gradient(to bottom, var(--black), var(--black));
+ background: linear-gradient(to bottom right, #0f1f1f, #1e1e1e);
   width: 50%;
   border: solid lightseagreen;
 }
@@ -168,6 +170,7 @@ img:hover {
   color: var(--gold);
   text-shadow: 1px 1px 3px #000;
   line-height: 1.4;
+  
 }
 
 .material-img {
@@ -217,6 +220,7 @@ img:hover {
   color: var(--gold);
   border-right: solid lightseagreen 1px;
   border-left: solid lightseagreen 1px;
+  background: linear-gradient(to bottom right, #0f1f1f, #1e1e1e);
 }
 
 
@@ -226,7 +230,7 @@ img:hover {
   margin: 2rem auto;
   max-width: 1000px;
   border: 1px solid lightseagreen;
-  background-color: var(--var-light-sky-blue);
+  background-color: var(--black);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
  
   text-shadow: var(--gold) 1px 1px 3px;
