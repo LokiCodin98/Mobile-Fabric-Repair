@@ -242,6 +242,7 @@ img:hover {
 
 .time{
   color: white;
+  padding-top: 100px;
 }
 
 ul.horizontal-list {
@@ -260,6 +261,10 @@ ul.horizontal-list li {
 
 .underline {
   text-decoration: underline;
+}
+
+#wavey {
+  animation: wavey 5s infinite;
 }
 
 .main-sign-img {
@@ -377,6 +382,7 @@ ul.horizontal-list li {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    color: white;
   }
 
   .material-img,
@@ -406,4 +412,12 @@ ul.horizontal-list li {
 @keyframes bump {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
+}
+
+@keyframes wavey {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-2px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-2px); }
+  100% { transform: translateY(0); }
 }
