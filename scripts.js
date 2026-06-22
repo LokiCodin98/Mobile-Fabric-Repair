@@ -1,24 +1,29 @@
+// Scroll-reveal animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
     }
   });
-});
+}, { threshold: 0.15 });
 
-document.querySelectorAll(".side-lines, .p-section, .material-img, .main-sign-img").forEach(el => {
-  observer.observe(el);
-});
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
-const text = "502-817-8864 (Norbert)";
-let index = 0;
+// Typewriter effect for the phone number in the hero
+const typewriterEl = document.getElementById("typewriter");
 
-function typeEffect() {
-  if (index < text.length) {
-    document.getElementById("typewriter").textContent += text.charAt(index);
-    index++;
-    setTimeout(typeEffect, 250); 
+if (typewriterEl) {
+  const text = "502-817-8864";
+  let index = 0;
+
+  function typeEffect() {
+    if (index < text.length) {
+      typewriterEl.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 90);
+    }
   }
-}
 
-window.addEventListener('load', typeEffect);
+  window.addEventListener("load", typeEffect);
+}
