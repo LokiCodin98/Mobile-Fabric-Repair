@@ -1,5 +1,9 @@
 *****-----Mobile Fabric Repair-----*****
 
+*--Tech---*
+HTML5, CSS3, JavaScript, Widget, Animation
+
+
 Created in October 2025, updated 2025-2026.
 
 This is my family member's work and was able to given a chance to create a small website. It's gone through 3 phases of change. 
